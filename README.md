@@ -1,3 +1,65 @@
+# Playwright Test Automation - ShopDemo
+
+This repository contains automated UI tests for the ShopDemo e-commerce application using Playwright and TypeScript.
+
+##  What I Implemented
+
+- End-to-End test automation using Playwright
+- Functional testing for key user flows
+- Independent test cases with no shared state
+- Reliable selectors using `data-testid`
+
+##  Test Coverage
+
+### Product Listing
+- Search functionality
+- Category filtering
+- Sorting by price
+- Empty state validation
+
+###  Product Detail
+- Product info validation
+- Add to Cart button state (enabled/disabled)
+
+### Cart
+- Add item to cart
+- Update quantity
+- Remove item
+- Total price validation
+- Empty cart state
+
+### Checkout
+- Form validation (required fields)
+- Email validation
+- Zip code validation
+
+###  End-to-End Flow
+- Complete purchase journey
+- Order confirmation validation
+
+##  Run Tests
+
+```bash
+npx playwright test
+Test Files
+tests/product-listing.spec.ts
+tests/product-detail.spec.ts
+tests/cart.spec.ts
+tests/checkout.spec.ts
+tests/e2e-purchase.spec.ts
+
+---
+
+##  After adding
+
+Run:
+
+```bash
+git add README.md
+git commit -m "Updated README with test details"
+git push
+
+
 # ShopDemo - Ecommerce Test Application
 
 A fully functional dummy ecommerce frontend built for QA testing with Playwright. All backend data is mocked using [MSW (Mock Service Worker)](https://mswjs.io/) — no real server required.
